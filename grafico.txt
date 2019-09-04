@@ -1,0 +1,25 @@
+p <- read.table("plot.txt")
+pdf("incidence.pdf")
+#plot(p[,1],p[,5],main="Incidence”,type="line",col="red",ylab="People",xlab="time[infectious period]")
+#pdf("Rplots.pdf",ylab="People",xlab="time[infectious period]")
+plot(p[,1],p[,5])
+
+
+##Ejamplo de histograma en R
+##para correr : source("histograma_ejemplo.R")
+#normal_dataset1<-vector()
+#normal_dataset2<-vector()
+#normal_dataset1<-rnorm(1000,mean=0,sd=2)
+#normal_dataset2<-rnorm(1000,mean=5,sd=3)
+#breaks_prueba<-100  # numero de intervalos del histograma, otras opciones hacer dentro de R >?hist
+#hprueba1<-hist(normal_dataset1,breaks=breaks_prueba)
+#hprueba2<-hist(normal_dataset2,breaks=breaks_prueba)
+
+
+
+#pdf("Histognormales.pdf")
+#plot(hprueba1,xlim=c(-5,20),main="Pruebas normales",ylab="Frec",xlab="x")
+#plot(hprueba2,add=T,col="red",xlim=c(-5,20))
+#vleg<-c("Normal1","Normal2")
+#legend("topright", vleg,col=c("black","red"),lty=1)
+#dev.off()
